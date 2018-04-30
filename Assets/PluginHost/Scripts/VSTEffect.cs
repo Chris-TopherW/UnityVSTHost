@@ -96,10 +96,9 @@ namespace pluginHost
             if (!ready) return;
             if (pluginFailedToLoad) return;
 
-            Marshal.Copy(data, 0, inputArrayAsVoidPtr, pluggoHost.blockSize * channels);
-            IntPtr outputVoidPtr = HostDllCpp.processFxAudio(thisVSTIndex, inputArrayAsVoidPtr, pluggoHost.blockSize, channels);
-            Marshal.Copy(outputVoidPtr, data, 0, pluggoHost.blockSize * channels);
-            if(MonoOutput && channels == 2)
+            HostDllCpp.processBuffer(thisVSTIndex, data, pluggoHost.blockSize, channels);
+
+            if (MonoOutput && channels == 2)
             {
                 for(int i = 0; i < data.Length; i+= 2)
                 {

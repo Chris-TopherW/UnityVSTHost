@@ -59,11 +59,8 @@ namespace pluginHost
 
         ///////////////////////////////////////////IO/////////////////////////////////////////
 
-        [DllImport(cppDllName, EntryPoint = "processFxAudio", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr processFxAudio(int vstIndex, IntPtr audioThrough, long numFrames, int numChannels);
-
-        [DllImport(cppDllName, EntryPoint = "processInstAudio", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr processInstAudio(int vstIndex, long numFrames, int numChannels);
+        [DllImport(cppDllName, EntryPoint = "processBuffer", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void processBuffer(int vstIndex, [In, Out] float[] audioThrough, long numFrames, int numChannels); //try out Ref keyword too
 
         [DllImport(cppDllName, EntryPoint = "getNumPluginInputs", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
         public static extern int getNumPluginInputs(int vstIndex);
