@@ -24,7 +24,7 @@ using System;
 
 namespace pluginHost
 {
-    //[ExecuteInEditMode]
+    [ExecuteInEditMode]
     public class VSTEffect : MonoBehaviour
     {
         //important stuff 
@@ -38,10 +38,8 @@ namespace pluginHost
 
         //////////////////////  params  //////////////////////
         [Header("Parameters")]
-        public int numParams;
-        [Range(0.0f, 1.0f)]
-        public float[] parameters;
-        public string[] paramNames;
+        private int numParams;
+        public FloatContain[] paramList;
         private float[] previousParams;
 
         //////////////////////  audio io  //////////////////////
@@ -80,13 +78,14 @@ namespace pluginHost
         void Update()
         {
             if (pluginFailedToLoad) return;
+            if (!ready) return;
                 
             for (int i = 0; i < numParams; i++)
             {
-                if (previousParams[i] != parameters[i])
+                if (previousParams[i] != paramList[i].value)
                 {
-                    HostDllCpp.setParam(thisVSTIndex, i, parameters[i]);
-                    previousParams[i] = parameters[i];
+                    HostDllCpp.setParam(thisVSTIndex, i, paramList[i].value);
+                    previousParams[i] = paramList[i].value;
                 }
             }
         }
@@ -128,14 +127,13 @@ namespace pluginHost
             if (pluginFailedToLoad) return;
 
             numParams = HostDllCpp.getNumParams(thisVSTIndex);
-            parameters = new float[numParams];
             previousParams = new float[numParams];
-            paramNames = new string[numParams];
+            paramList = new FloatContain[numParams];
             for (int i = 0; i < numParams; i++)
             {
-                parameters[i] = HostDllCpp.getParam(thisVSTIndex, i);
-                previousParams[i] = parameters[i];
-                paramNames[i] = getParameterName(i);
+                paramList[i].value = HostDllCpp.getParam(thisVSTIndex, i);
+                previousParams[i] = paramList[i].value;
+                paramList[i].name = getParameterName(i);
             }
             //alloc unmanaged memory
             messagePtrSize = 8 * 256;
@@ -169,4 +167,13 @@ namespace pluginHost
             ready = false;
         }
     }
+
+    [System.Serializable]//makes sure this shows up in the inspector
+    public struct FloatContain
+    {
+        public string name;//your name variable to edit
+        [Range(0.0f, 1.0f)]
+        public float value;
+    }
 }
+

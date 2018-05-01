@@ -47,5 +47,10 @@ namespace pluginHost
         {
             pluggoHost.init();
         }
+
+        private void OnApplicationQuit()
+        {
+            HostDllCpp.clearVSTs();
+        }
     }
 }

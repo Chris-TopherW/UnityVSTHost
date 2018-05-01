@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -250,6 +250,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
+      propertyPath: paramList.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
       propertyPath: parameters.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -444,6 +449,121 @@ Prefab:
         type: 2}
       propertyPath: OutputAudioMixerGroup
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[1].name
+      value: dry
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[1].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[2].name
+      value: wet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[2].value
+      value: 0.16100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[3].name
+      value: room size
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[3].value
+      value: 0.75200003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[4].name
+      value: pre delay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[4].value
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[5].name
+      value: low shelf freque
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[5].value
+      value: 0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[6].name
+      value: high shelf frequ
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[6].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[7].name
+      value: peak frequency
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[7].value
+      value: 0.492
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[8].name
+      value: low shelf gain
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[8].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[9].name
+      value: high shelf gain
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[9].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[10].name
+      value: peak gain
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[10].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[11].name
+      value: stereo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[11].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[12].name
+      value: stereo input
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd8b522096696b0439b7be828b20bb9b, type: 2}
