@@ -95,6 +95,11 @@
         <para>Object representing a group in the mixer.</para>
       </summary>
     </member>
+    <member name="T:UnityEngine.Audio.AudioMixerPlayable">
+      <summary>
+        <para>An implementation of IPlayable that controls an audio mixer.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.Audio.AudioMixerSnapshot">
       <summary>
         <para>Object representing a snapshot in the mixer.</para>
@@ -629,6 +634,44 @@
       <summary>
         <para>Determines how much the filter's self-resonance is dampened.</para>
       </summary>
+    </member>
+    <member name="T:UnityEngine.AudioRenderer">
+      <summary>
+        <para>Allow recording the main output of the game or specific groups in the AudioMixer.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.AudioRenderer.GetSampleCountForCaptureFrame">
+      <summary>
+        <para>Returns the number of samples available since the last time AudioRenderer.Render was called. This is dependent on the frame capture rate.</para>
+      </summary>
+      <returns>
+        <para>Number of samples available since last recorded frame.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AudioRenderer.Render(UnityEngine.Collections.NativeArray`1&lt;System.Single&gt;)">
+      <summary>
+        <para>Performs the recording of the main output as well as any optional mixer groups that have been registered via AudioRenderer.AddMixerGroupSink.</para>
+      </summary>
+      <param name="buffer">The buffer to write the sample data to.</param>
+      <returns>
+        <para>True if the recording succeeded.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AudioRenderer.Start">
+      <summary>
+        <para>Enters audio recording mode. After this Unity will output silence until AudioRenderer.Stop is called.</para>
+      </summary>
+      <returns>
+        <para>True if the engine was switched into output recording mode. False if it is already recording.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.AudioRenderer.Stop">
+      <summary>
+        <para>Exits audio recording mode. After this audio output will be audible again.</para>
+      </summary>
+      <returns>
+        <para>True if the engine was recording when this function was called.</para>
+      </returns>
     </member>
     <member name="T:UnityEngine.AudioReverbFilter">
       <summary>

@@ -12625,9 +12625,19 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Is advertising tracking enabled.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.iOS.Device.deferSystemGesturesMode">
+      <summary>
+        <para>Defer system gestures until the second swipe on specific edges.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.iOS.Device.generation">
       <summary>
         <para>The generation of the device. (Read Only)</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.iOS.Device.hideHomeButton">
+      <summary>
+        <para>Specifies whether the home button should be hidden in the iOS build of this application.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.iOS.Device.systemVersion">
@@ -13152,6 +13162,41 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="P:UnityEngine.iOS.RemoteNotification.userInfo">
       <summary>
         <para>A dictionary for passing custom information to the notified application. (Read Only)</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.iOS.SystemGestureDeferMode">
+      <summary>
+        <para>Bit-mask used to control the deferring of system gestures on iOS.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.All">
+      <summary>
+        <para>Identifies all screen edges.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.BottomEdge">
+      <summary>
+        <para>Identifies bottom screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.LeftEdge">
+      <summary>
+        <para>Identifies left screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.None">
+      <summary>
+        <para>Disables gesture deferring on all edges.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.RightEdge">
+      <summary>
+        <para>Identifies right screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.SystemGestureDeferMode.TopEdge">
+      <summary>
+        <para>Identifies top screen edge.</para>
       </summary>
     </member>
     <member name="?:UnityEngine.ISerializationCallbackReceiver">

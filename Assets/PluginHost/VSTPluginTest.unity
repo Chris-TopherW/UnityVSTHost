@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ Prefab:
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.size
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
@@ -453,87 +453,87 @@ Prefab:
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[1].name
-      value: dry
+      value: volume
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[1].value
-      value: 0.5
+      value: 0.40800002
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[2].name
-      value: wet
+      value: filtertype
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[2].value
-      value: 0.16100001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[3].name
-      value: room size
+      value: cutoff
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[3].value
-      value: 0.75200003
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[4].name
-      value: pre delay
+      value: resonance
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[4].value
-      value: 0.132
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[5].name
-      value: low shelf freque
+      value: keyfollow
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[5].value
-      value: 0.024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[6].name
-      value: high shelf frequ
+      value: filtercontour
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[6].value
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[7].name
-      value: peak frequency
+      value: filterattack
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[7].value
-      value: 0.492
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[8].name
-      value: low shelf gain
+      value: filterdecay
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[8].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[9].name
-      value: high shelf gain
+      value: filtersustain
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
@@ -543,27 +543,477 @@ Prefab:
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[10].name
-      value: peak gain
+      value: filterrelease
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[10].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[11].name
-      value: stereo
+      value: ampattack
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[11].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
         type: 2}
       propertyPath: paramList.Array.data[12].name
-      value: stereo input
+      value: ampdecay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[13].name
+      value: ampsustain
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[13].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[14].name
+      value: amprelease
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[15].name
+      value: osc1volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[15].value
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[16].name
+      value: osc2volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[17].name
+      value: osc3volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[17].value
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[18].name
+      value: oscmastertune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[18].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[19].name
+      value: osc1tune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[19].value
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[20].name
+      value: osc2tune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[20].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[21].name
+      value: osc1finetune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[21].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[22].name
+      value: osc2finetune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[22].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[23].name
+      value: osc1waveform
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[24].name
+      value: osc2waveform
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[25].name
+      value: oscsync
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[26].name
+      value: lfo1waveform
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[27].name
+      value: lfo2waveform
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[28].name
+      value: lfo1rate
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[29].name
+      value: lfo2rate
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[30].name
+      value: lfo1amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[30].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[31].name
+      value: lfo2amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[31].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[32].name
+      value: lfo1destination
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[33].name
+      value: lfo2destination
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[34].name
+      value: lfo1phase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[35].name
+      value: lfo2phase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[36].name
+      value: osc2fm
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[37].name
+      value: osc2phase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[38].name
+      value: osc1pw
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[38].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[39].name
+      value: osc1phase
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[39].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[40].name
+      value: transpose
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[40].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[41].name
+      value: freeadattack
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[42].name
+      value: freeaddecay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[43].name
+      value: freeadamount
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[44].name
+      value: freeaddestinatio
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[45].name
+      value: lfo1sync
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[46].name
+      value: lfo1keytrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[47].name
+      value: lfo2sync
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[48].name
+      value: lfo2keytrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[49].name
+      value: portamento
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[50].name
+      value: portamentomode
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[51].name
+      value: voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[52].name
+      value: velocityvolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[53].name
+      value: velocitycontour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[54].name
+      value: velocitycutoff
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[55].name
+      value: pitchwheelcutoff
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[56].name
+      value: pitchwheelpitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[57].name
+      value: ringmodulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[58].name
+      value: chorus1enable
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[59].name
+      value: chorus2enable
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[60].name
+      value: reverbwet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[61].name
+      value: reverbdecay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[61].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[62].name
+      value: reverbpredelay
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[63].name
+      value: reverbhighcut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[64].name
+      value: reverblowcut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[64].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[65].name
+      value: oscbitcrusher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[65].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[66].name
+      value: highpass
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[67].name
+      value: detune
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[68].name
+      value: vintagenoise
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[71].name
+      value: envelopeeditorde
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[72].name
+      value: envelopeeditorsp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[73].name
+      value: envelopeeditoram
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[74].name
+      value: envelopeoneshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[75].name
+      value: envelopefixtempo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[77].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[80].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[81].name
+      value: filterdrive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[82].name
+      value: delaywet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[83].name
+      value: delaytime
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[83].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[84].name
+      value: delaysync
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[85].name
+      value: delayfactorl
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[86].name
+      value: delayfactorr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[87].name
+      value: delayhighshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[88].name
+      value: delaylowshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[89].name
+      value: delayfeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134384253605426, guid: dd8b522096696b0439b7be828b20bb9b,
+        type: 2}
+      propertyPath: paramList.Array.data[89].value
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd8b522096696b0439b7be828b20bb9b, type: 2}

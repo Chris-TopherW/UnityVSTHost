@@ -18760,41 +18760,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>A light status bar, intended for use on dark backgrounds.</para>
       </summary>
     </member>
-    <member name="T:UnityEditor.iOSSystemGestureDeferMode">
-      <summary>
-        <para>Bit-mask used to control the deferring of system gestures on iOS.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.All">
-      <summary>
-        <para>Identifies all screen edges.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.BottomEdge">
-      <summary>
-        <para>Identifies bottom screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.LeftEdge">
-      <summary>
-        <para>Identifies left screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.None">
-      <summary>
-        <para>Disables gesture deferring on all edges.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.RightEdge">
-      <summary>
-        <para>Identifies right screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.TopEdge">
-      <summary>
-        <para>Identifies top screen edge.</para>
-      </summary>
-    </member>
     <member name="T:UnityEditor.iOSTargetDevice">
       <summary>
         <para>Target iOS device.</para>
@@ -23215,6 +23180,11 @@ See Also: PhysicsVisualizationSettings.</para>
         <para>Defer system gestures until the second swipe on specific edges.</para>
       </summary>
     </member>
+    <member name="P:UnityEditor.PlayerSettings.iOS.deferSystemGesturesMode">
+      <summary>
+        <para>Defer system gestures until the second swipe on specific edges.</para>
+      </summary>
+    </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.disableDepthAndStencilBuffers">
       <summary>
         <para>Disable Depth and Stencil Buffers.</para>
@@ -27001,6 +26971,12 @@ See Also:</para>
       <returns>
         <para>The material property found, otherwise null.</para>
       </returns>
+    </member>
+    <member name="M:UnityEditor.ShaderGUI.OnClosed(UnityEngine.Material)">
+      <summary>
+        <para>This method is called when the ShaderGUI is being closed.</para>
+      </summary>
+      <param name="material"></param>
     </member>
     <member name="M:UnityEditor.ShaderGUI.OnGUI(UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])">
       <summary>

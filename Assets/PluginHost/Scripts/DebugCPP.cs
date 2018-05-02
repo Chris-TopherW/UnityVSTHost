@@ -29,7 +29,7 @@ namespace CppDebug
 {
     public class DebugCPP : MonoBehaviour
     {
-        private bool showNativeDebug = false;
+        private bool showNativeDebug = true;
         private static bool staticAllowDebug = true;
         void OnEnable()
         {
