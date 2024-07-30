@@ -8,6 +8,6 @@ This is a very limited implementation of the standard:
 
 Basically it uses OnAudioFilterRead to call the DSP callback on loaded plugins and can send them parameters.
 
-Note that I have removed the C++ dll code as Steinberg do not allow the vst2 library to be shared via git and they also no longer distribute it.
+Note that I have removed the C++ dll source code repo as Steinberg do not allow the vst2 library to be shared and they also no longer distribute it.
 
 Warning: this code was part of my grad research in 2016 and is a dumpster fire, enter at your own peril.
